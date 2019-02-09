@@ -17,7 +17,7 @@ public class Vehicle {
         return color;
     }
 }
-public class Program{
+public class Prog{
     public static void main(String[] args) {
         //color will be red
         Vehicle v1 = new Vehicle();
