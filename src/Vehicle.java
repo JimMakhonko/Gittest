@@ -2,20 +2,29 @@
 public class Vehicle {
     private String color;
 
-public String getColor(){
-    return color;
+    Vehicle(){
+    this.setColor("Red");
+    }
+    Vehicle(String c){
+        this.setColor(c);
+    }
+    //setter
+    public void setColor(String c) {
+        this.color = c;
+    }
+    //getter
+    public String getColor(){
+        return color;
+    }
 }
-}
-public void setColor(String c) {
-    this.color = c;
-}
-}
-
-class Program{
+public class Program{
     public static void main(String[] args) {
+        //color will be red
         Vehicle v1 = new Vehicle();
-        v1.setColor("Red");
-        System.out.println(v1.getColor());
+
+        //color will be green
+        Vehicle v2 = new Vehicle("Green");
+ System.out.print(v2.getColor());
 
     }
 }
